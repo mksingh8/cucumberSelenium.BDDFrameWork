@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="91.573782">
+    <testcase classname="Shaadi Login Feature" name="Shaadi.com Login Test Scenario" time="18.138366">
+        <system-out>
+            <![CDATA[Given User is already on Login Page.........................................passed
+When user clicks on the Login Button........................................passed
+Then user enters "msingh1" and "password1"..................................passed
+Then user clicks on Signin button...........................................passed
+Then user is on Home Page...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Shaadi Login Feature" name="Shaadi.com Login Test Scenario 2" time="16.912015">
+        <system-out>
+            <![CDATA[Given User is already on Login Page.........................................passed
+When user clicks on the Login Button........................................passed
+Then user enters "msingh2" and "password2"..................................passed
+Then user clicks on Signin button...........................................passed
+Then user is on Home Page...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Shaadi Login Feature" name="Shaadi.com Login Test Scenario 3" time="14.983713">
+        <system-out>
+            <![CDATA[Given User is already on Login Page.........................................passed
+When user clicks on the Login Button........................................passed
+Then user enters "msingh3" and "password3"..................................passed
+Then user clicks on Signin button...........................................passed
+Then user is on Home Page...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Shaadi Login Feature" name="Shaadi.com Login Test Scenario 4" time="16.829879">
+        <system-out>
+            <![CDATA[Given User is already on Login Page.........................................passed
+When user clicks on the Login Button........................................passed
+Then user enters "msingh4" and "password4"..................................passed
+Then user clicks on Signin button...........................................passed
+Then user is on Home Page...................................................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Signup on Shaadi.com" name="Signup functionality scenario" time="24.709809">
+        <system-out>
+            <![CDATA[Given user is already on shaadiDotcom website...............................passed
+When user clicks on the SignUp button.......................................passed
+Then user provides "abc@gmail.com" and "password1" and OnBehalf details as "Daughter".passed
+Then user clicks on the Next button.........................................passed
+Then Great! Now some basic details are displayed............................passed
+And user provides daughters "Reema" and "Bera" and other details............passed
+Then clciks on the SignUp button............................................passed
+Then user close the browser.................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
