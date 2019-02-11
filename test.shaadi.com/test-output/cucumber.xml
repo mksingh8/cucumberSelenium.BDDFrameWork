@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="18.70242">
-    <testcase classname="Shaadi Login Feature" name="Shaadi.com Login Test Scenario" time="18.70242">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.003193">
+    <testcase classname="Tagging in Cucumber" name="checking login function" time="0.002541">
         <system-out>
-            <![CDATA[Given User is already on Login Page.........................................passed
-When User clicks on the Login Button........................................passed
-Then User enters userName and password on signin page.......................passed
-Then User clicks on Signin button on signin page............................passed
-Then User is moved to Home Page.............................................passed
+            <![CDATA[Given user hit the url of xxx site..........................................skipped
+Then user clicks on the signin button.......................................skipped
+And user provides its credentials...........................................skipped
+Then user click on next button And home page is displayed...................skipped
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tagging in Cucumber" name="checking transfer balance" time="0.000652">
+        <system-out>
+            <![CDATA[Given user is on the Home page..............................................skipped
+Then user clicks on the transfer fund option................................skipped
+Then user selects the transfer method.......................................skipped
+And selects the receipient..................................................skipped
+Then enters the amount to be transferred....................................skipped
+And hit the transfer button.................................................skipped
+Then user provides the OTP on the transaction completion page...............skipped
+Then hit ok button..........................................................skipped
 ]]>
         </system-out>
     </testcase>

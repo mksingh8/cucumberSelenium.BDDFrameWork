@@ -1,115 +1,214 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 2,
-        "name": "Shaadi.com Login Test Scenario",
+        "line": 10,
+        "name": "checking login function",
         "description": "",
-        "id": "shaadi-login-feature;shaadi.com-login-test-scenario",
+        "id": "tagging-in-cucumber;checking-login-function",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 13283063372,
-              "status": "passed"
+              "duration": 471681,
+              "status": "skipped"
             },
-            "line": 6,
-            "name": "User is already on Login Page",
+            "line": 11,
+            "name": "user hit the url of xxx site",
             "match": {
-              "location": "LoginStepWithMapDefinition.user_already_on_Login_Page()"
+              "location": "TagStepDefinition.user_hit_the_url_of_xxx_site()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 326468478,
-              "status": "passed"
+              "duration": 11440,
+              "status": "skipped"
             },
-            "line": 7,
-            "name": "User clicks on the Login Button",
+            "line": 12,
+            "name": "user clicks on the signin button",
             "match": {
-              "location": "LoginStepWithMapDefinition.user_clicks_on_the_Login_Button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1401735421,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "User enters userName and password on signin page",
-            "match": {
-              "location": "LoginStepWithMapDefinition.user_enter_usrName_password_on_sigin_page(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "userName",
-                  "password"
-                ]
-              },
-              {
-                "cells": [
-                  "msingh1",
-                  "password1"
-                ]
-              },
-              {
-                "cells": [
-                  "msingh2",
-                  "password2"
-                ]
-              },
-              {
-                "cells": [
-                  "msingh3",
-                  "password3"
-                ]
-              },
-              {
-                "cells": [
-                  "msingh4",
-                  "password4"
-                ]
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2418653819,
-              "status": "passed"
-            },
-            "line": 15,
-            "name": "User clicks on Signin button on signin page",
-            "match": {
-              "location": "LoginStepWithMapDefinition.user_clicks_on_Signin_button_on_signin_page()"
+              "location": "TagStepDefinition.user_clicks_on_the_signin_button()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1267937061,
-              "status": "passed"
+              "duration": 7155,
+              "status": "skipped"
             },
-            "line": 16,
-            "name": "User is moved to Home Page",
+            "line": 13,
+            "name": "user provides its credentials",
             "match": {
-              "location": "LoginStepWithMapDefinition.user_is_on_Home_Page()"
+              "location": "TagStepDefinition.user_provides_its_credentials()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7620,
+              "status": "skipped"
+            },
+            "line": 14,
+            "name": "user click on next button And home page is displayed",
+            "match": {
+              "location": "TagStepDefinition.user_click_on_next_button_And_home_page_is_displayed()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@E2ETest"
+          }
+        ]
+      },
+      {
+        "line": 20,
+        "name": "checking transfer balance",
+        "description": "",
+        "id": "tagging-in-cucumber;checking-transfer-balance",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 12910,
+              "status": "skipped"
+            },
+            "line": 21,
+            "name": "user is on the Home page",
+            "match": {
+              "location": "TagStepDefinition.user_is_on_the_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 8390,
+              "status": "skipped"
+            },
+            "line": 22,
+            "name": "user clicks on the transfer fund option",
+            "match": {
+              "location": "TagStepDefinition.user_clicks_on_the_transfer_fund_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6959,
+              "status": "skipped"
+            },
+            "line": 23,
+            "name": "user selects the transfer method",
+            "match": {
+              "location": "TagStepDefinition.user_selects_the_transfer_method()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6823,
+              "status": "skipped"
+            },
+            "line": 24,
+            "name": "selects the receipient",
+            "match": {
+              "location": "TagStepDefinition.selects_the_receipient()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6773,
+              "status": "skipped"
+            },
+            "line": 25,
+            "name": "enters the amount to be transferred",
+            "match": {
+              "location": "TagStepDefinition.enters_the_amount_to_be_transferred()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6655,
+              "status": "skipped"
+            },
+            "line": 26,
+            "name": "hit the transfer button",
+            "match": {
+              "location": "TagStepDefinition.hit_the_transfer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6633,
+              "status": "skipped"
+            },
+            "line": 27,
+            "name": "user provides the OTP on the transaction completion page",
+            "match": {
+              "location": "TagStepDefinition.user_provides_the_OTP_on_the_transaction_completion_page()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6237,
+              "status": "skipped"
+            },
+            "line": 28,
+            "name": "hit ok button",
+            "match": {
+              "location": "TagStepDefinition.hit_ok_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          },
+          {
+            "name": "@E2ETest"
           }
         ]
       }
     ],
-    "name": "Shaadi Login Feature",
+    "name": "Tagging in Cucumber",
     "description": "",
-    "id": "shaadi-login-feature",
+    "id": "tagging-in-cucumber",
     "keyword": "Feature",
-    "uri": "/home/manish/git/cucumberSelenium.BDDFrameWork/test.shaadi.com/src/main/java/Features/loginMapTable.feature",
-    "tags": []
+    "uri": "/home/manish/git/cucumberSelenium.BDDFrameWork/test.shaadi.com/src/main/java/Features/tagFile.feature",
+    "tags": [
+      {
+        "name": "@FunctionalTest",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
