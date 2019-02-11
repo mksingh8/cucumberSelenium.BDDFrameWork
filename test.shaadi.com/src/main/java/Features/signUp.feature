@@ -1,6 +1,9 @@
 Feature: Signup on Shaadi.com
 Scenario: Signup functionality scenario
 
+# parameterization without Examples key word, regular expression has to be used. 
+#regular expression is used where dataTable is not used.
+
 Given user is already on shaadiDotcom website
 When user clicks on the SignUp button
 Then user provides "abc@gmail.com" and "password1" and OnBehalf details as "Daughter"

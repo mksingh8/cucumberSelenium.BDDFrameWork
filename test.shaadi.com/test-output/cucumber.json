@@ -3,320 +3,102 @@
     "line": 1,
     "elements": [
       {
-        "line": 12,
+        "line": 2,
         "name": "Shaadi.com Login Test Scenario",
         "description": "",
-        "id": "shaadi-login-feature;shaadi.com-login-test-scenario;;2",
+        "id": "shaadi-login-feature;shaadi.com-login-test-scenario",
         "type": "scenario",
-        "keyword": "Scenario Outline",
+        "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 13449930109,
+              "duration": 13283063372,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "User is already on Login Page",
             "match": {
-              "location": "LoginStepDefinition.user_already_on_Login_Page()"
+              "location": "LoginStepWithMapDefinition.user_already_on_Login_Page()"
             },
             "keyword": "Given "
           },
           {
             "result": {
-              "duration": 263746786,
+              "duration": 326468478,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user clicks on the Login Button",
+            "line": 7,
+            "name": "User clicks on the Login Button",
             "match": {
-              "location": "LoginStepDefinition.title_of_page_The_No1_Matchmaking()"
+              "location": "LoginStepWithMapDefinition.user_clicks_on_the_Login_Button()"
             },
             "keyword": "When "
           },
           {
             "result": {
-              "duration": 1037079052,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters \"msingh1\" and \"password1\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "msingh1",
-                  "offset": 13
-                },
-                {
-                  "val": "password1",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginStepDefinition.user_enter_usrName_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2150952390,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on Signin button",
-            "match": {
-              "location": "LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1233573622,
+              "duration": 1401735421,
               "status": "passed"
             },
             "line": 8,
-            "name": "user is on Home Page",
+            "name": "User enters userName and password on signin page",
             "match": {
-              "location": "LoginStepDefinition.user_is_on_Home_Page()"
+              "location": "LoginStepWithMapDefinition.user_enter_usrName_password_on_sigin_page(DataTable)"
             },
+            "rows": [
+              {
+                "cells": [
+                  "userName",
+                  "password"
+                ]
+              },
+              {
+                "cells": [
+                  "msingh1",
+                  "password1"
+                ]
+              },
+              {
+                "cells": [
+                  "msingh2",
+                  "password2"
+                ]
+              },
+              {
+                "cells": [
+                  "msingh3",
+                  "password3"
+                ]
+              },
+              {
+                "cells": [
+                  "msingh4",
+                  "password4"
+                ]
+              }
+            ],
             "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 13,
-        "name": "Shaadi.com Login Test Scenario",
-        "description": "",
-        "id": "shaadi-login-feature;shaadi.com-login-test-scenario;;3",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 13020689797,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is already on Login Page",
-            "match": {
-              "location": "LoginStepDefinition.user_already_on_Login_Page()"
-            },
-            "keyword": "Given "
           },
           {
             "result": {
-              "duration": 274873747,
+              "duration": 2418653819,
               "status": "passed"
             },
-            "line": 5,
-            "name": "user clicks on the Login Button",
+            "line": 15,
+            "name": "User clicks on Signin button on signin page",
             "match": {
-              "location": "LoginStepDefinition.title_of_page_The_No1_Matchmaking()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1081982780,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters \"msingh2\" and \"password2\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "msingh2",
-                  "offset": 13
-                },
-                {
-                  "val": "password2",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginStepDefinition.user_enter_usrName_password(String,String)"
+              "location": "LoginStepWithMapDefinition.user_clicks_on_Signin_button_on_signin_page()"
             },
             "keyword": "Then "
           },
           {
             "result": {
-              "duration": 1444356333,
+              "duration": 1267937061,
               "status": "passed"
             },
-            "line": 7,
-            "name": "user clicks on Signin button",
+            "line": 16,
+            "name": "User is moved to Home Page",
             "match": {
-              "location": "LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1089593933,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user is on Home Page",
-            "match": {
-              "location": "LoginStepDefinition.user_is_on_Home_Page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 14,
-        "name": "Shaadi.com Login Test Scenario",
-        "description": "",
-        "id": "shaadi-login-feature;shaadi.com-login-test-scenario;;4",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 11199940879,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is already on Login Page",
-            "match": {
-              "location": "LoginStepDefinition.user_already_on_Login_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 254723786,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on the Login Button",
-            "match": {
-              "location": "LoginStepDefinition.title_of_page_The_No1_Matchmaking()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1038427141,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters \"msingh3\" and \"password3\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "msingh3",
-                  "offset": 13
-                },
-                {
-                  "val": "password3",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginStepDefinition.user_enter_usrName_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1285368924,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on Signin button",
-            "match": {
-              "location": "LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1204693223,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user is on Home Page",
-            "match": {
-              "location": "LoginStepDefinition.user_is_on_Home_Page()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      },
-      {
-        "line": 15,
-        "name": "Shaadi.com Login Test Scenario",
-        "description": "",
-        "id": "shaadi-login-feature;shaadi.com-login-test-scenario;;5",
-        "type": "scenario",
-        "keyword": "Scenario Outline",
-        "steps": [
-          {
-            "result": {
-              "duration": 12123537060,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "User is already on Login Page",
-            "match": {
-              "location": "LoginStepDefinition.user_already_on_Login_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 283945612,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on the Login Button",
-            "match": {
-              "location": "LoginStepDefinition.title_of_page_The_No1_Matchmaking()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 1032021749,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user enters \"msingh4\" and \"password4\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "msingh4",
-                  "offset": 13
-                },
-                {
-                  "val": "password4",
-                  "offset": 27
-                }
-              ],
-              "location": "LoginStepDefinition.user_enter_usrName_password(String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 2339192222,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on Signin button",
-            "match": {
-              "location": "LoginStepDefinition.user_clicks_on_login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1050675214,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user is on Home Page",
-            "match": {
-              "location": "LoginStepDefinition.user_is_on_Home_Page()"
+              "location": "LoginStepWithMapDefinition.user_is_on_Home_Page()"
             },
             "keyword": "Then "
           }
@@ -327,148 +109,7 @@
     "description": "",
     "id": "shaadi-login-feature",
     "keyword": "Feature",
-    "uri": "/home/manish/eclipse-workspace/test.shaadi.com/src/main/java/Features/login.feature",
-    "tags": []
-  },
-  {
-    "line": 1,
-    "elements": [
-      {
-        "line": 2,
-        "name": "Signup functionality scenario",
-        "description": "",
-        "id": "signup-on-shaadi.com;signup-functionality-scenario",
-        "type": "scenario",
-        "keyword": "Scenario",
-        "steps": [
-          {
-            "result": {
-              "duration": 10756287832,
-              "status": "passed"
-            },
-            "line": 4,
-            "name": "user is already on shaadiDotcom website",
-            "match": {
-              "location": "SignupStepDefinition.user_is_already_on_shaadiDotcom_website()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 265011093,
-              "status": "passed"
-            },
-            "line": 5,
-            "name": "user clicks on the SignUp button",
-            "match": {
-              "location": "SignupStepDefinition.user_clicks_on_the_SignUp_button()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 2615629889,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user provides \"abc@gmail.com\" and \"password1\" and OnBehalf details as \"Daughter\"",
-            "match": {
-              "arguments": [
-                {
-                  "val": "abc@gmail.com",
-                  "offset": 15
-                },
-                {
-                  "val": "password1",
-                  "offset": 35
-                },
-                {
-                  "val": "Daughter",
-                  "offset": 71
-                }
-              ],
-              "location": "SignupStepDefinition.user_provides_email_address_andpassword_and_OnBehalf_details_as_daughter(String,String,String)"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 627773861,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "user clicks on the Next button",
-            "match": {
-              "location": "SignupStepDefinition.user_clicks_on_the_Next_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 125126339,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "Great! Now some basic details are displayed",
-            "match": {
-              "location": "SignupStepDefinition.great_Now_some_basic_details_are_displayed()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 6506090915,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provides daughters \"Reema\" and \"Bera\" and other details",
-            "match": {
-              "arguments": [
-                {
-                  "val": "Reema",
-                  "offset": 25
-                },
-                {
-                  "val": "Bera",
-                  "offset": 37
-                }
-              ],
-              "location": "SignupStepDefinition.user_provides_daughter_details(String,String)"
-            },
-            "keyword": "And "
-          },
-          {
-            "result": {
-              "duration": 2426404769,
-              "status": "passed"
-            },
-            "line": 10,
-            "name": "clciks on the SignUp button",
-            "match": {
-              "location": "SignupStepDefinition.clciks_on_the_SignUp_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 1386717363,
-              "status": "passed"
-            },
-            "line": 11,
-            "name": "user close the browser",
-            "match": {
-              "location": "SignupStepDefinition.user_close_the_browser()"
-            },
-            "keyword": "Then "
-          }
-        ]
-      }
-    ],
-    "name": "Signup on Shaadi.com",
-    "description": "",
-    "id": "signup-on-shaadi.com",
-    "keyword": "Feature",
-    "uri": "/home/manish/eclipse-workspace/test.shaadi.com/src/main/java/Features/signUp.feature",
+    "uri": "/home/manish/git/cucumberSelenium.BDDFrameWork/test.shaadi.com/src/main/java/Features/loginMapTable.feature",
     "tags": []
   }
 ]

@@ -1,7 +1,9 @@
 Feature: Shaadi Login Feature
 Scenario Outline: Shaadi.com Login Test Scenario
 
-Given User is already on Login Page
+# parameterization using scenario outline and Examples key word, regular expression has to be used.
+
+Given user is already on Login Page
 When user clicks on the Login Button
 Then user enters "<userName>" and "<password>"
 Then user clicks on Signin button

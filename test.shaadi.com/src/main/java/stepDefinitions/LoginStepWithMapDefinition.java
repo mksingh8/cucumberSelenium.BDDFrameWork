@@ -1,6 +1,8 @@
 package stepDefinitions;
 
+import java.util.Map;
 import java.util.concurrent.TimeUnit;
+
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.ElementNotInteractableException;
@@ -9,14 +11,17 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
+import io.cucumber.datatable.DataTable;
 
-public class LoginStepDefinition {
-	WebDriver driver;
+public class LoginStepWithMapDefinition {
 	
-	@Given("^user is already on Login Page$")
+WebDriver driver;
+	
+	@Given("User is already on Login Page")
 	public void user_already_on_Login_Page() {
 		System.setProperty("webdriver.gecko.driver", 
 				"/home/manish/Downloads/Selenium/Lib/Browser/geckodriver-v0.23.0-linux64/geckodriver");
@@ -27,34 +32,35 @@ public class LoginStepDefinition {
 		driver.get("https://www.shaadi.com/");	
 	}
 	
-	@When("^user clicks on the Login Button$")
-	public void title_of_page_The_No1_Matchmaking() {
+	@When("User clicks on the Login Button")
+	public void user_clicks_on_the_Login_Button() {
 		String title = driver.getTitle();
 		System.out.println(title);
 		driver.findElement(By.xpath("//a[@class='member_login']")).click();
 	}
 	
-	@Then("^user enters \"(.*)\" and \"(.*)\"$")
-	public void user_enter_usrName_password(String userName, String password) {
+	@Then("User enters userName and password on signin page")
+	public void user_enter_usrName_password_on_sigin_page(DataTable userCredentials) {
+		
+		Map<String, String> data = userCredentials.asMap(String.class, String.class);
+		
 		WebElement email = driver.findElement(By.xpath("//*[@id='login_page']"));
 		new WebDriverWait(driver, 20).ignoring(ElementNotInteractableException.class).until(ExpectedConditions.elementToBeClickable(email));
-		//Thread.sleep(500);
-		email.sendKeys(userName);
-		driver.findElement(By.xpath("//*[@id='password_page']")).sendKeys(password);
+		email.sendKeys(data.get("userName"));
+		driver.findElement(By.xpath("//*[@id='password_page']")).sendKeys("password");
 		
 	}
 	
-	@Then("^user clicks on Signin button$")
-	public void user_clicks_on_login_button() {
+	@Then("User clicks on Signin button on signin page")
+	public void user_clicks_on_Signin_button_on_signin_page() {
 		driver.findElement(By.xpath("//a[text()='Sign In']")).click();
 	}
 
-	@Then("^user is on Home Page$")
+	@Then("User is moved to Home Page")
 	public void user_is_on_Home_Page() {
 		String title = driver.getTitle();
 		Assert.assertEquals("Login to Matrimonials", title);
 	    driver.quit();
 	}
-
 
 }
