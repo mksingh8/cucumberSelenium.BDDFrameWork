@@ -3,17 +3,130 @@
     "line": 2,
     "elements": [
       {
-        "line": 10,
-        "name": "checking login function",
+        "before": [
+          {
+            "result": {
+              "duration": 927333,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "checking signup function",
         "description": "",
-        "id": "tagging-in-cucumber;checking-login-function",
+        "id": "tagging-in-cucumber;checking-signup-function",
+        "after": [
+          {
+            "result": {
+              "duration": 55747,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 471681,
-              "status": "skipped"
+              "duration": 187047,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user hit the url of xxx site",
+            "match": {
+              "location": "TagStepDefinition.user_hit_the_url_of_xxx_site()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 107214,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user clicks on the signup button",
+            "match": {
+              "location": "TagStepDefinition.user_clicks_on_the_signup_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 63188,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user provides its data",
+            "match": {
+              "location": "TagStepDefinition.user_provides_its_data()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 58427,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on the save button on signup page",
+            "match": {
+              "location": "TagStepDefinition.user_clicks_on_the_save_button_on_signup_page()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 238194,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 10,
+        "name": "checking login function",
+        "description": "",
+        "id": "tagging-in-cucumber;checking-login-function",
+        "after": [
+          {
+            "result": {
+              "duration": 55639,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 64929,
+              "status": "passed"
             },
             "line": 11,
             "name": "user hit the url of xxx site",
@@ -24,8 +137,8 @@
           },
           {
             "result": {
-              "duration": 11440,
-              "status": "skipped"
+              "duration": 82692,
+              "status": "passed"
             },
             "line": 12,
             "name": "user clicks on the signin button",
@@ -36,8 +149,8 @@
           },
           {
             "result": {
-              "duration": 7155,
-              "status": "skipped"
+              "duration": 64440,
+              "status": "passed"
             },
             "line": 13,
             "name": "user provides its credentials",
@@ -48,8 +161,8 @@
           },
           {
             "result": {
-              "duration": 7620,
-              "status": "skipped"
+              "duration": 61795,
+              "status": "passed"
             },
             "line": 14,
             "name": "user click on next button And home page is displayed",
@@ -75,17 +188,40 @@
         ]
       },
       {
+        "before": [
+          {
+            "result": {
+              "duration": 238740,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.setup()"
+            }
+          }
+        ],
         "line": 20,
         "name": "checking transfer balance",
         "description": "",
         "id": "tagging-in-cucumber;checking-transfer-balance",
+        "after": [
+          {
+            "result": {
+              "duration": 111596,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.tearDown()"
+            }
+          }
+        ],
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 12910,
-              "status": "skipped"
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepDefinitions.TagStepDefinition.user_is_on_the_Home_page(TagStepDefinition.java:64)\n\tat ✽.user is on the Home page(/home/manish/git/cucumberSelenium.BDDFrameWork/test.shaadi.com/src/main/java/Features/tagFile.feature:21)\n",
+              "duration": 2248412,
+              "status": "pending"
             },
             "line": 21,
             "name": "user is on the Home page",
@@ -96,7 +232,7 @@
           },
           {
             "result": {
-              "duration": 8390,
+              "duration": 12832,
               "status": "skipped"
             },
             "line": 22,
@@ -108,7 +244,7 @@
           },
           {
             "result": {
-              "duration": 6959,
+              "duration": 11694,
               "status": "skipped"
             },
             "line": 23,
@@ -120,7 +256,7 @@
           },
           {
             "result": {
-              "duration": 6823,
+              "duration": 8362,
               "status": "skipped"
             },
             "line": 24,
@@ -132,7 +268,7 @@
           },
           {
             "result": {
-              "duration": 6773,
+              "duration": 7496,
               "status": "skipped"
             },
             "line": 25,
@@ -144,7 +280,7 @@
           },
           {
             "result": {
-              "duration": 6655,
+              "duration": 7129,
               "status": "skipped"
             },
             "line": 26,
@@ -156,7 +292,7 @@
           },
           {
             "result": {
-              "duration": 6633,
+              "duration": 7134,
               "status": "skipped"
             },
             "line": 27,
@@ -168,7 +304,7 @@
           },
           {
             "result": {
-              "duration": 6237,
+              "duration": 7285,
               "status": "skipped"
             },
             "line": 28,
@@ -191,6 +327,110 @@
           },
           {
             "name": "@E2ETest"
+          }
+        ]
+      },
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 228160,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.setup()"
+            }
+          }
+        ],
+        "line": 30,
+        "name": "checking mobile recharge",
+        "description": "",
+        "id": "tagging-in-cucumber;checking-mobile-recharge",
+        "after": [
+          {
+            "result": {
+              "duration": 93237,
+              "status": "passed"
+            },
+            "match": {
+              "location": "TagStepDefinition.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "error_message": "cucumber.api.PendingException: TODO: implement me\n\tat stepDefinitions.TagStepDefinition.user_is_on_the_Home_page(TagStepDefinition.java:64)\n\tat ✽.user is on the Home page(/home/manish/git/cucumberSelenium.BDDFrameWork/test.shaadi.com/src/main/java/Features/tagFile.feature:31)\n",
+              "duration": 219715,
+              "status": "pending"
+            },
+            "line": 31,
+            "name": "user is on the Home page",
+            "match": {
+              "location": "TagStepDefinition.user_is_on_the_Home_page()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 7326,
+              "status": "skipped"
+            },
+            "line": 32,
+            "name": "user selects the recharge mobile option",
+            "match": {
+              "location": "TagStepDefinition.user_selects_the_recharge_mobile_option()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8172,
+              "status": "skipped"
+            },
+            "line": 33,
+            "name": "enters its mobile number",
+            "match": {
+              "location": "TagStepDefinition.enters_its_mobile_number()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 7425,
+              "status": "skipped"
+            },
+            "line": 34,
+            "name": "selects the plan",
+            "match": {
+              "location": "TagStepDefinition.selects_the_plan()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9125,
+              "status": "skipped"
+            },
+            "line": 35,
+            "name": "user hit the ok button",
+            "match": {
+              "location": "TagStepDefinition.user_hit_the_ok_button()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@SmokeTest"
+          },
+          {
+            "name": "@RegressionTest"
           }
         ]
       }

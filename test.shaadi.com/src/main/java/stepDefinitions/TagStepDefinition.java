@@ -1,5 +1,7 @@
 package stepDefinitions;
 
+import cucumber.api.java.After;
+import cucumber.api.java.Before;
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
 import cucumber.api.java.en.When;
@@ -7,10 +9,22 @@ import cucumber.api.java.en.When;
 
 
 public class TagStepDefinition {
+	//Global Hooks
+	@Before
+	public void setup() {
+		System.out.println("launch ff");
+		System.out.println("set windows and timeoutsetting");
+		System.out.println("navigate to url");
+	}
+	
+	@After
+	public void tearDown() {
+		System.out.println("quit the browser");
+	}
 	
 	@Given("user hit the url of xxx site")
 	public void user_hit_the_url_of_xxx_site() {
-	    System.out.println("user hit the url of xxx site");
+	    System.out.println("this is already cover in before annotation and user is on home page now");
 	}
 
 	@When("user clicks on the signup button")
@@ -30,20 +44,18 @@ public class TagStepDefinition {
 
 	@Then("user clicks on the signin button")
 	public void user_clicks_on_the_signin_button() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    System.out.println("user clicks on sign in button");
 	}
 
 	@Then("user provides its credentials")
 	public void user_provides_its_credentials() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+		System.out.println("user provides its credentials");
+		
 	}
 
 	@Then("user click on next button And home page is displayed")
 	public void user_click_on_next_button_And_home_page_is_displayed() {
-	    // Write code here that turns the phrase above into concrete actions
-	    throw new cucumber.api.PendingException();
+	    System.out.println("user click on next button And home page is displayed");
 	}
 
 	@Given("user is on the Home page")

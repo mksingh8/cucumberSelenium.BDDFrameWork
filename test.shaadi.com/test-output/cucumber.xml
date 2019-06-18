@@ -1,17 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="0.003193">
-    <testcase classname="Tagging in Cucumber" name="checking login function" time="0.002541">
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="4" time="0.008685">
+    <testcase classname="Tagging in Cucumber" name="checking signup function" time="0.003399">
         <system-out>
-            <![CDATA[Given user hit the url of xxx site..........................................skipped
-Then user clicks on the signin button.......................................skipped
-And user provides its credentials...........................................skipped
-Then user click on next button And home page is displayed...................skipped
+            <![CDATA[Given user hit the url of xxx site..........................................passed
+When user clicks on the signup button.......................................passed
+And user provides its data..................................................passed
+Then user clicks on the save button on signup page..........................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="Tagging in Cucumber" name="checking transfer balance" time="0.000652">
+    <testcase classname="Tagging in Cucumber" name="checking login function" time="0.000782">
         <system-out>
-            <![CDATA[Given user is on the Home page..............................................skipped
+            <![CDATA[Given user hit the url of xxx site..........................................passed
+Then user clicks on the signin button.......................................passed
+And user provides its credentials...........................................passed
+Then user click on next button And home page is displayed...................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Tagging in Cucumber" name="checking transfer balance" time="0.003492">
+        <failure message="The scenario has pending or undefined step(s)">
+            <![CDATA[Given user is on the Home page..............................................pending
 Then user clicks on the transfer fund option................................skipped
 Then user selects the transfer method.......................................skipped
 And selects the receipient..................................................skipped
@@ -20,6 +29,16 @@ And hit the transfer button.................................................skip
 Then user provides the OTP on the transaction completion page...............skipped
 Then hit ok button..........................................................skipped
 ]]>
-        </system-out>
+        </failure>
+    </testcase>
+    <testcase classname="Tagging in Cucumber" name="checking mobile recharge" time="0.001012">
+        <failure message="The scenario has pending or undefined step(s)">
+            <![CDATA[Given user is on the Home page..............................................pending
+Then user selects the recharge mobile option................................skipped
+Then enters its mobile number...............................................skipped
+And selects the plan........................................................skipped
+Then user hit the ok button.................................................skipped
+]]>
+        </failure>
     </testcase>
 </testsuite>
